@@ -1,14 +1,14 @@
 CREATE TABLE equipment_checkouts (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    item_name VARCHAR(100) NOT NULL,
-    checked_out_by VARCHAR(100) NOT NULL,
-    checkout_date DATE NOT NULL,
-    return_date DATE NULL,
-    is_returned BOOLEAN NOT NULL DEFAULT FALSE
+    itemName VARCHAR(100) NOT NULL,
+    checkedOutBy VARCHAR(100) NOT NULL,
+    checkoutDate DATE NOT NULL,
+    returnDate DATE NULL,
+    isReturned BOOLEAN NOT NULL DEFAULT FALSE
 );
 
 INSERT INTO equipment_checkouts
-(item_name, checked_out_by, checkout_date, return_date, is_returned)
+(itemName, checkedOutBy, checkoutDate, returnDate, isReturned)
 VALUES
 ('Laptop - Dell XPS 13', 'Alex Johnson', '2024-10-01', NULL, FALSE),
 ('Projector - Epson 2150', 'Maria Lopez', '2024-09-28', '2024-10-02', TRUE),
